@@ -28,11 +28,11 @@ importers:
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.33.1_vsoshirnpb7xw6mr7xomgfas2i
       '@typescript-eslint/parser': 5.33.1_4rv7y5c6xz3vfxwhbrcxxi73bq
-      '@vnphanquang/prettierrc': link:../prettierrc
       eslint-config-prettier: 8.5.0_eslint@8.22.0
       eslint-plugin-import: 2.26.0_3bh5nkk7utn7e74vrwtv6rxmt4
       eslint-plugin-prettier: 4.2.1_i2cojdczqdiurzgttlwdgf764e
     devDependencies:
+      '@vnphanquang/prettierrc': link:../prettierrc
       eslint: 8.22.0
       prettier: 2.7.1
       typescript: 4.7.4
