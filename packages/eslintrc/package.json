@@ -1,0 +1,50 @@
+{
+  "name": "@vnphanquang/eslint-config",
+  "version": "0.0.0",
+  "main": ".eslintrc.cjs",
+  "author": "Quang Phan",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "base.cjs",
+    ".eslintrc.cjs",
+    "svelte-kit.cjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnphanquang/jsconfig"
+  },
+  "bugs": {
+    "url": "https://github.com/vnphanquang/jsconfig/issues"
+  },
+  "homepage": "https://github.com/vnphanquang/jsconfig/tree/main/pacakges/eslintrc",
+  "keywords": [
+    "eslint",
+    "config",
+    "vnphanquang"
+  ],
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "format": "prettier --check \"./**/*.{ts,js,cjs,json}\""
+  },
+  "dependencies": {
+    "@vnphanquang/prettierrc": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  }
+}

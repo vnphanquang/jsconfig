@@ -1,0 +1,26 @@
+{
+  "name": "jsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "turbo": "turbo",
+    "lint": "turbo run lint --parallel",
+    "format": "turbo run format --parallel",
+    "ci:version": "changeset version",
+    "ci:publish": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.6",
+    "@changesets/cli": "^2.24.0",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "pnpm": ">=7.6.0",
+    "node": ">=16.17.0"
+  },
+  "packageManager": "pnpm@7.6.0"
+}

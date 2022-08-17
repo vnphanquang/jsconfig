@@ -1,0 +1,10 @@
+{
+  "name": "@vnphanquang/prettierrc",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Quang Phan",
+  "main": "index.js",
+  "peerDependencies": {
+    "prettier": "^2.6.2"
+  }
+}

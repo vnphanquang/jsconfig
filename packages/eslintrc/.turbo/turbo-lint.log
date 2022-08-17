@@ -1,0 +1,13 @@
+[32m@vnphanquang/eslint-config:lint[0m: cache hit, replaying output [2m3c9ba823ad084b92[0m
+[32m@vnphanquang/eslint-config:lint: [0m
+[32m@vnphanquang/eslint-config:lint: [0m> @vnphanquang/eslint-config@0.0.0 lint /Users/4dvn-quang/dev/github/eslint-config/packages/eslintrc
+[32m@vnphanquang/eslint-config:lint: [0m> eslint **/*.js
+[32m@vnphanquang/eslint-config:lint: [0m
+[32m@vnphanquang/eslint-config:lint: [0m
+[32m@vnphanquang/eslint-config:lint: [0m/Users/4dvn-quang/dev/github/eslint-config/packages/eslintrc/prettier.config.js
+[32m@vnphanquang/eslint-config:lint: [0m  2:14  error  Strings must use doublequote  @typescript-eslint/quotes
+[32m@vnphanquang/eslint-config:lint: [0m
+[32m@vnphanquang/eslint-config:lint: [0m✖ 1 problem (1 error, 0 warnings)
+[32m@vnphanquang/eslint-config:lint: [0m  1 error and 0 warnings potentially fixable with the `--fix` option.
+[32m@vnphanquang/eslint-config:lint: [0m
+[32m@vnphanquang/eslint-config:lint: [0m ELIFECYCLE  Command failed with exit code 1.

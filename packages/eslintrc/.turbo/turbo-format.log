@@ -1,0 +1,7 @@
+[32m@vnphanquang/eslint-config:format[0m: cache hit, replaying output [2mc95d50fa97d43fa0[0m
+[32m@vnphanquang/eslint-config:format: [0m
+[32m@vnphanquang/eslint-config:format: [0m> @vnphanquang/eslint-config@0.0.0 format /Users/4dvn-quang/dev/github/eslint-config/packages/eslintrc
+[32m@vnphanquang/eslint-config:format: [0m> prettier --check "./**/*.{ts,js,cjs,json}"
+[32m@vnphanquang/eslint-config:format: [0m
+[32m@vnphanquang/eslint-config:format: [0mChecking formatting...
+[32m@vnphanquang/eslint-config:format: [0mAll matched files use Prettier code style!
