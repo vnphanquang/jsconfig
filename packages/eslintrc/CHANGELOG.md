@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 1.1.2
+
+### Patch Changes
+
+- [`bb20882`](https://github.com/vnphanquang/jsconfig/commit/bb208820dfbb0c6d843cd63366a6bef83d387ea6) Thanks [@vnphanquang](https://github.com/vnphanquang)! - remove prettier from plugins
+
 ## 1.1.1
 
 ### Patch Changes

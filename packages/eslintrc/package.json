@@ -1,6 +1,6 @@
 {
   "name": "@vnphanquang/eslint-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": ".eslintrc.cjs",
   "author": "Quang Phan",
   "license": "MIT",
