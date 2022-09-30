@@ -1,9 +1,29 @@
 {
   "name": "@vnphanquang/prettierrc",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "author": "Quang Phan",
-  "main": "index.js",
+  "license": "MIT",
+  "main": "prettier.config.cjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "prettier.config.cjs"
+  ],
+  "keywords": [
+    "prettier",
+    "config",
+    "vnphanquang"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnphanquang/jsconfig"
+  },
+  "bugs": {
+    "url": "https://github.com/vnphanquang/jsconfig/issues"
+  },
+  "homepage": "https://github.com/vnphanquang/jsconfig/tree/main/pacakges/eslintrc",
   "peerDependencies": {
     "prettier": "^2.6.2"
   }
