@@ -11,7 +11,7 @@ module.exports = {
     amd: true,
     node: true,
   },
-  plugins: ['import', '@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'import'],
   rules: {
     // semi-colon override for typescript
     semi: 'off',
@@ -71,7 +71,7 @@ module.exports = {
             group: 'internal',
           },
           {
-            pattern: '$config',
+            pattern: '$*',
             group: 'internal',
           },
         ],

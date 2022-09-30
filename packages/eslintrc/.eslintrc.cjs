@@ -3,6 +3,6 @@ const base = require('./base.cjs');
 
 module.exports = {
   ...base,
-  extends: [...base.extends, 'plugin:prettier/recommended'],
+  extends: [...base.extends],
   plugins: [...base.plugins, 'prettier'],
 };
