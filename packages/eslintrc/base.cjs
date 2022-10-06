@@ -12,11 +12,25 @@ module.exports = {
     node: true,
   },
   plugins: ['@typescript-eslint', 'import'],
+  overrides: [
+    { files: ['*.svelte'], processor: 'svelte3/svelte3' },
+    {
+      files: ['*.story.svelte'],
+      rules: {
+        'no-redeclare': 'off',
+      },
+    },
+    {
+      files: ['*.config.{ts,js,cjs}'],
+      rules: {
+        '@typescript-eslint/triple-slash-reference': 'off',
+      },
+    },
+  ],
   rules: {
     // semi-colon override for typescript
     semi: 'off',
     '@typescript-eslint/semi': ['error'],
-
     // https://eslint.org/docs/rules/no-unused-vars#options
     '@typescript-eslint/no-unused-vars': [
       'warn',
