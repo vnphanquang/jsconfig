@@ -15,6 +15,12 @@ module.exports = {
   overrides: [
     { files: ['*.svelte'], processor: 'svelte3/svelte3' },
     {
+      files: ['*.cjs'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
       files: ['*.story.svelte'],
       rules: {
         'no-redeclare': 'off',
