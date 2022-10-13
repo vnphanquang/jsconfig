@@ -1,5 +1,15 @@
 # @vnphanquang/eslint-config
 
+## 1.1.3
+
+### Patch Changes
+
+- [`2528be7`](https://github.com/vnphanquang/jsconfig/commit/2528be7a3a157e742076ee4521d4582a45be083c) Thanks [@vnphanquang](https://github.com/vnphanquang)! - allow node `require` in cjs files
+
+- [`5415379`](https://github.com/vnphanquang/jsconfig/commit/54153796575dc834f5d699c43433d0ce52adcca7) Thanks [@vnphanquang](https://github.com/vnphanquang)! - allow triple slash reference in ts,js,cjs files
+
+- [`5415379`](https://github.com/vnphanquang/jsconfig/commit/54153796575dc834f5d699c43433d0ce52adcca7) Thanks [@vnphanquang](https://github.com/vnphanquang)! - allow redeclare in .story.svelte files
+
 ## 1.1.2
 
 ### Patch Changes
