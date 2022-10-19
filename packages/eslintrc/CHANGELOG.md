@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 1.1.5
+
+### Patch Changes
+
+- [`6bb2ba9`](https://github.com/vnphanquang/jsconfig/commit/6bb2ba96a82ab244f3ca90e7ed6b2771f9d89fdf) Thanks [@vnphanquang](https://github.com/vnphanquang)! - do not set svelte processing in base eslint config
+
 ## 1.1.4
 
 ### Patch Changes
