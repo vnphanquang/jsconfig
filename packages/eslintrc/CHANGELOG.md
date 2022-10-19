@@ -1,5 +1,13 @@
 # @vnphanquang/eslint-config
 
+## 1.1.4
+
+### Patch Changes
+
+- [`44a4810`](https://github.com/vnphanquang/jsconfig/commit/44a48100fcd1a8f38db19934544d9a83d7f9154d) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump dependencies
+
+- [`5de7f66`](https://github.com/vnphanquang/jsconfig/commit/5de7f66ff54105ce12f2bd059ffcb43e9b8cc8e7) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add base overrides to svelte-kit config variant
+
 ## 1.1.3
 
 ### Patch Changes
