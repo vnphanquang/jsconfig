@@ -13,7 +13,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import'],
   overrides: [
-    { files: ['*.svelte'], processor: 'svelte3/svelte3' },
     {
       files: ['*.cjs'],
       rules: {
