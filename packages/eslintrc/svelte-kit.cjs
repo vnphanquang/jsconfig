@@ -4,7 +4,10 @@ const base = require('./base.cjs');
 module.exports = {
   ...base,
   plugins: ['svelte3', ...base.plugins],
-  overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
+  overrides: [
+    { files: ['*.svelte'], processor: 'svelte3/svelte3' },
+    ...base.overrides,
+  ],
   settings: {
     'svelte3/typescript': () => require('typescript'),
   },
