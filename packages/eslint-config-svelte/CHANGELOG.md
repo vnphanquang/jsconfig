@@ -1,0 +1,1 @@
+# @vnphanquang/eslint-config-svelte

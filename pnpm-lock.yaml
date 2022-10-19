@@ -16,7 +16,7 @@ importers:
     devDependencies:
       '@changesets/changelog-github': 0.4.7
       '@changesets/cli': 2.25.0
-      '@vnphanquang/eslint-config': link:packages/eslintrc
+      '@vnphanquang/eslint-config': link:packages/eslint-config
       '@vnphanquang/prettierrc': link:packages/prettierrc
       eslint: 8.25.0
       lint-staged: 13.0.3
@@ -24,7 +24,7 @@ importers:
       simple-git-hooks: 2.8.1
       turbo: 1.5.6
 
-  packages/eslintrc:
+  packages/eslint-config:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.38.1
       '@typescript-eslint/parser': ^5.38.1
@@ -33,6 +33,7 @@ importers:
       eslint-config-prettier: ^8.5.0
       eslint-plugin-import: ^2.26.0
       prettier: ^2.7.1
+      svelte: ^3.52.0
       typescript: ^4.8.4
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.38.1_444tv3vqp6lpktlxqzfovoqee4
@@ -43,6 +44,26 @@ importers:
       '@vnphanquang/prettierrc': link:../prettierrc
       eslint: 8.25.0
       prettier: 2.7.1
+      svelte: 3.52.0
+      typescript: 4.8.4
+
+  packages/eslint-config-svelte:
+    specifiers:
+      '@vnphanquang/eslint-config': 1.1.5
+      '@vnphanquang/prettierrc': workspace:^1.0.0
+      eslint: ^8.25.0
+      eslint-plugin-svelte3: ^4.0.0
+      prettier: ^2.7.1
+      svelte: ^3.52.0
+      typescript: ^4.8.4
+    dependencies:
+      '@vnphanquang/eslint-config': link:../eslint-config
+      eslint-plugin-svelte3: 4.0.0_2h6d4ngklmojchucosx7yvuw7m
+    devDependencies:
+      '@vnphanquang/prettierrc': link:../prettierrc
+      eslint: 8.25.0
+      prettier: 2.7.1
+      svelte: 3.52.0
       typescript: 4.8.4
 
   packages/prettierrc:
@@ -1064,6 +1085,16 @@ packages:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+    dev: false
+
+  /eslint-plugin-svelte3/4.0.0_2h6d4ngklmojchucosx7yvuw7m:
+    resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
+    peerDependencies:
+      eslint: '>=8.0.0'
+      svelte: ^3.2.0
+    dependencies:
+      eslint: 8.25.0
+      svelte: 3.52.0
     dev: false
 
   /eslint-scope/5.1.1:
@@ -2458,6 +2489,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  /svelte/3.52.0:
+    resolution: {integrity: sha512-FxcnEUOAVfr10vDU5dVgJN19IvqeHQCS1zfe8vayTfis9A2t5Fhx+JDe5uv/C3j//bB1umpLJ6quhgs9xyUbCQ==}
+    engines: {node: '>= 8'}
 
   /term-size/2.2.1:
     resolution: {integrity: sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==}

@@ -1,3 +1,7 @@
 module.exports = {
-  ...require('./base.cjs'),
+  tabWidth: 2,
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  printWidth: 100,
 };

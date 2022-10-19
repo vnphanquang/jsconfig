@@ -8,10 +8,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "base.cjs",
-    "prettier.config.cjs"
-  ],
   "keywords": [
     "prettier",
     "config",
