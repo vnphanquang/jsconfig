@@ -49,7 +49,7 @@ importers:
 
   packages/eslint-config-svelte:
     specifiers:
-      '@vnphanquang/eslint-config': ^1.2.0
+      '@vnphanquang/eslint-config': ^1.2.1
       '@vnphanquang/prettierrc': workspace:^1.0.0
       eslint: ^8.30.0
       eslint-plugin-svelte3: ^4.0.0

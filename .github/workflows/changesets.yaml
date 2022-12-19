@@ -26,7 +26,7 @@ jobs:
           node-version: 16
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --ignore-scripts
       - name: Create release PR or Publish to npm
         uses: changesets/action@v1
         with:
