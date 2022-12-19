@@ -1,5 +1,14 @@
 # @vnphanquang/eslint-config-svelte
 
+## 1.0.1
+
+### Patch Changes
+
+- [`274fa3b`](https://github.com/vnphanquang/jsconfig/commit/274fa3b7a08a7d8b9030af1762c5d6f2e4989c37) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump dependencies
+
+- Updated dependencies [[`274fa3b`](https://github.com/vnphanquang/jsconfig/commit/274fa3b7a08a7d8b9030af1762c5d6f2e4989c37)]:
+  - @vnphanquang/eslint-config@1.2.1
+
 ## 1.0.0
 
 ### Major Changes
