@@ -1,6 +1,6 @@
 {
   "name": "@vnphanquang/eslint-config-svelte",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": ".eslintrc.cjs",
   "author": "Quang Phan",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "format": "prettier --check \"./**/*.{ts,js,cjs,json}\""
   },
   "dependencies": {
-    "@vnphanquang/eslint-config": "^1.2.1",
+    "@vnphanquang/eslint-config": "^1.2.2",
     "eslint-plugin-svelte3": "^4.0.0"
   },
   "devDependencies": {
