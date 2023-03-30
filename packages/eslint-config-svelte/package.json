@@ -30,10 +30,10 @@
   },
   "devDependencies": {
     "@vnphanquang/prettierrc": "workspace:^1.0.0",
-    "eslint": "^8.31.0",
-    "prettier": "^2.8.2",
-    "svelte": "^3.55.1",
-    "typescript": "^4.9.4"
+    "eslint": "^8.37.0",
+    "prettier": "^2.8.7",
+    "svelte": "^3.57.0",
+    "typescript": "^5.0.2"
   },
   "peerDependencies": {
     "eslint": "^8.15.0",
