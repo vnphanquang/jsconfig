@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/vnphanquang/jsconfig/issues"
   },
-  "homepage": "https://github.com/vnphanquang/jsconfig/tree/main/pacakges/eslintrc",
-  "peerDependencies": {
-    "prettier": "^2.6.2"
-  }
+  "homepage": "https://github.com/vnphanquang/jsconfig/tree/main/pacakges/eslintrc"
 }
