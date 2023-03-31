@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config-svelte
 
+## 1.0.4
+
+### Patch Changes
+
+- [`37a8c34`](https://github.com/vnphanquang/jsconfig/commit/37a8c34794ed40b16db29228d843148cb6b730cb) Thanks [@vnphanquang](https://github.com/vnphanquang)! - remove peer dependencies specification
+
 ## 1.0.3
 
 ### Patch Changes
