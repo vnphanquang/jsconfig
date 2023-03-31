@@ -48,7 +48,7 @@ importers:
         version: 2.27.5(@typescript-eslint/parser@5.57.0)(eslint@8.37.0)
     devDependencies:
       '@vnphanquang/prettierrc':
-        specifier: workspace:^1.0.0
+        specifier: workspace:^1.0.1
         version: link:../prettierrc
       eslint:
         specifier: ^8.37.0
@@ -66,14 +66,14 @@ importers:
   packages/eslint-config-svelte:
     dependencies:
       '@vnphanquang/eslint-config':
-        specifier: ^1.2.2
+        specifier: ^1.2.3
         version: link:../eslint-config
       eslint-plugin-svelte3:
         specifier: ^4.0.0
         version: 4.0.0(eslint@8.37.0)(svelte@3.57.0)
     devDependencies:
       '@vnphanquang/prettierrc':
-        specifier: workspace:^1.0.0
+        specifier: workspace:^1.0.1
         version: link:../prettierrc
       eslint:
         specifier: ^8.37.0
