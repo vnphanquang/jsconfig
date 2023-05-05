@@ -19,11 +19,11 @@
     "@changesets/cli": "^2.26.1",
     "@vnphanquang/eslint-config": "workspace:^1.1.4",
     "@vnphanquang/prettierrc": "workspace:^1.0.0",
-    "eslint": "^8.37.0",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.8.7",
+    "eslint": "^8.39.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "simple-git-hooks": "^2.8.1",
-    "turbo": "^1.8.8"
+    "turbo": "^1.9.3"
   },
   "engines": {
     "pnpm": ">=8.0.0",
