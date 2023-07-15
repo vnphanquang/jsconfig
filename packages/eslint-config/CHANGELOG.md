@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- [`5c3cfa0`](https://github.com/vnphanquang/jsconfig/commit/5c3cfa0b24892ebc069491fa7e373916eef13d7d) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump @typescript-eslint/eslint-plugin to v6
+
 ## 1.2.4
 
 ### Patch Changes
