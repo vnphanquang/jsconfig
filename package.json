@@ -17,8 +17,8 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.2",
-    "@vnphanquang/eslint-config": "workspace:^1.1.4",
-    "@vnphanquang/prettierrc": "workspace:^1.0.0",
+    "@vnphanquang/eslint-config": "workspace:*",
+    "@vnphanquang/prettierrc": "workspace:*",
     "eslint": "^8.45.0",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",

@@ -15,10 +15,10 @@ importers:
         specifier: ^2.26.2
         version: 2.26.2
       '@vnphanquang/eslint-config':
-        specifier: workspace:^1.1.4
+        specifier: workspace:*
         version: link:packages/eslint-config
       '@vnphanquang/prettierrc':
-        specifier: workspace:^1.0.0
+        specifier: workspace:*
         version: link:packages/prettierrc
       eslint:
         specifier: ^8.45.0
@@ -52,7 +52,7 @@ importers:
         version: 2.27.5(@typescript-eslint/parser@6.0.0)(eslint@8.45.0)
     devDependencies:
       '@vnphanquang/prettierrc':
-        specifier: workspace:^1.0.1
+        specifier: workspace:*
         version: link:../prettierrc
       eslint:
         specifier: ^8.45.0

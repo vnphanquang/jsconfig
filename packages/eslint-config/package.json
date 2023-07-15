@@ -31,7 +31,7 @@
     "eslint-plugin-import": "^2.27.5"
   },
   "devDependencies": {
-    "@vnphanquang/prettierrc": "workspace:^1.0.1",
+    "@vnphanquang/prettierrc": "workspace:*",
     "eslint": "^8.45.0",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6"
