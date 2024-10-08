@@ -1,6 +1,6 @@
 {
 	"name": "@vnphanquang/eslint-config",
-	"version": "2.0.1",
+	"version": "3.0.0",
 	"type": "module",
 	"main": "eslint.config.js",
 	"types": "eslint.config.d.ts",

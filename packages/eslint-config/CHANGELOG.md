@@ -1,5 +1,15 @@
 # @vnphanquang/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- [`ec8dd48`](https://github.com/vnphanquang/jsconfig/commit/ec8dd480f20c70defcb35462492231035a076acc) Thanks [@vnphanquang](https://github.com/vnphanquang)! - upgrade to v9
+
+### Patch Changes
+
+- [`a1a0868`](https://github.com/vnphanquang/jsconfig/commit/a1a08681711cfc79718a820190e755309ee57563) Thanks [@vnphanquang](https://github.com/vnphanquang)! - set up package provenence
+
 ## 2.0.1
 
 ### Patch Changes
