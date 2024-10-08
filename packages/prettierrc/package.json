@@ -1,25 +1,27 @@
 {
-  "name": "@vnphanquang/prettierrc",
-  "version": "1.0.1",
-  "private": false,
-  "author": "Quang Phan",
-  "license": "MIT",
-  "main": "prettier.config.cjs",
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
-  "keywords": [
-    "prettier",
-    "config",
-    "vnphanquang"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vnphanquang/jsconfig"
-  },
-  "bugs": {
-    "url": "https://github.com/vnphanquang/jsconfig/issues"
-  },
-  "homepage": "https://github.com/vnphanquang/jsconfig/tree/main/pacakges/eslintrc"
+	"name": "@vnphanquang/prettierrc",
+	"version": "1.0.1",
+	"private": false,
+	"author": "Quang Phan",
+	"license": "MIT",
+	"type": "module",
+	"main": "prettier.config.js",
+	"types": "prettier.config.d.ts",
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"keywords": [
+		"prettier",
+		"config",
+		"vnphanquang"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vnphanquang/jsconfig"
+	},
+	"bugs": {
+		"url": "https://github.com/vnphanquang/jsconfig/issues"
+	},
+	"homepage": "https://github.com/vnphanquang/jsconfig/tree/main/pacakges/eslintrc"
 }
