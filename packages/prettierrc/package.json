@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "prettier.config.cjs",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "keywords": [
     "prettier",
