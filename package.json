@@ -3,15 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"type": "module",
-	"workspaces": [
-		"packages/*"
-	],
 	"scripts": {
-		"prepare": "husky || true",
-		"turbo": "turbo",
-		"build": "turbo run build",
-		"lint": "turbo run lint --parallel",
-		"format": "turbo run format --parallel",
+		"prepare": "lefthook install",
 		"ci:version": "changeset version",
 		"ci:publish": "pnpm build && changeset publish"
 	},
@@ -20,11 +13,8 @@
 		"@changesets/cli": "^2.27.9",
 		"@vnphanquang/eslint-config": "workspace:*",
 		"@vnphanquang/prettierrc": "workspace:*",
-		"eslint": "^9.12.0",
-		"husky": "^9.1.6",
-		"lint-staged": "^15.2.10",
-		"prettier": "^3.3.3",
-		"turbo": "^2.1.3"
+		"eslint": "^9.15.0",
+		"prettier": "^3.3.3"
 	},
 	"packageManager": "pnpm@9.12.0",
 	"engines": {

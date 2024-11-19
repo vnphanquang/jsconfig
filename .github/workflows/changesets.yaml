@@ -10,7 +10,6 @@ on:
 
 env:
   CI: true
-  HUSKY: 0
 jobs:
   Version:
     if: github.repository == 'vnphanquang/jsconfig' # prevents this action from running on forks
