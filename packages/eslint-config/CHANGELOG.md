@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 3.0.1
+
+### Patch Changes
+
+- [`8576061`](https://github.com/vnphanquang/jsconfig/commit/8576061b7d000b97b78d265011d32ae5d38dd522) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump eslint dependencies, remove husky & lint-staged in favor of lefthook, remove turbo
+
 ## 3.0.0
 
 ### Major Changes
