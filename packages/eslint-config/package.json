@@ -2,8 +2,14 @@
 	"name": "@vnphanquang/eslint-config",
 	"version": "3.0.1",
 	"type": "module",
-	"main": "eslint.config.js",
-	"types": "eslint.config.d.ts",
+	"main": "src/index.js",
+	"types": "types/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./types/index.d.ts",
+			"import": "./src/index.js"
+		}
+	},
 	"author": "Quang Phan",
 	"license": "MIT",
 	"publishConfig": {
@@ -12,8 +18,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/vnphanquang/jsconfig"
+		"url": "git+https://github.com/vnphanquang/jsconfig.git"
 	},
+	"files": [
+		"src",
+		"types"
+	],
 	"bugs": {
 		"url": "https://github.com/vnphanquang/jsconfig/issues"
 	},
@@ -24,24 +34,30 @@
 		"vnphanquang"
 	],
 	"scripts": {
-		"lint": "eslint **/*.js",
-		"format": "prettier --check \"./**/*.{ts,js,cjs,json}\""
+		"lint": "eslint .",
+		"format": "prettier --check \"./**/*.{ts,js,cjs,json}\"",
+		"dts": "dts-buddy --write && publint",
+		"prepublishOnly": "pnpm dts"
+	},
+	"peerDependencies": {
+		"eslint": ">=9.0.0"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^8.15.0",
-		"@typescript-eslint/parser": "^8.15.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-import-x": "^4.4.2",
-		"globals": "^15.12.0",
-		"typescript-eslint": "^8.15.0"
+		"@eslint/compat": "^1.2.7",
+		"@eslint/js": "^9.22.0",
+		"@typescript-eslint/eslint-plugin": "^8.27.0",
+		"@typescript-eslint/parser": "^8.27.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-import-x": "^4.7.1",
+		"eslint-plugin-svelte": "^3.1.0",
+		"globals": "^16.0.0",
+		"typescript-eslint": "^8.27.0"
 	},
 	"devDependencies": {
-		"@types/eslint": "^9.6.1",
-		"@types/eslint-config-prettier": "^6.11.3",
-		"@types/eslint__js": "^8.42.3",
+		"@sveltejs/kit": "^2.20.1",
 		"@vnphanquang/prettierrc": "workspace:*",
-		"eslint": "^9.15.0",
-		"prettier": "^3.3.3",
-		"typescript": "^5.6.3"
+		"eslint": "^9.22.0",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.2"
 	}
 }
