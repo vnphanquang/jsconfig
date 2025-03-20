@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- [`bdc9d4c`](https://github.com/vnphanquang/jsconfig/commit/bdc9d4c114f7ab6fecb83ee2c8860d843d4e9af9) Thanks [@vnphanquang](https://github.com/vnphanquang)! - [BREAKING] expose a `defineConfig` function with options instead of fixed config
+
 ## 3.0.1
 
 ### Patch Changes
