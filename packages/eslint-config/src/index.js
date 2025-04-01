@@ -40,6 +40,9 @@ export function defineConfig(options = {}) {
 				globals: {
 					...globals.browser,
 					...globals.node,
+					...(useSvelte && {
+						App: 'readonly',
+					}),
 				},
 			},
 		},
