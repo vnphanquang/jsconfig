@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.0.1
+
+### Patch Changes
+
+- [`5c915cc`](https://github.com/vnphanquang/jsconfig/commit/5c915cce010105a45d63c9fdc97805deaed55098) Thanks [@vnphanquang](https://github.com/vnphanquang)! - add `App` as readonly global when using Svelte
+
 ## 4.0.0
 
 ### Major Changes
