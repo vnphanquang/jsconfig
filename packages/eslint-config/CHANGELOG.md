@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.0.2
+
+### Patch Changes
+
+- [`ebd98ca`](https://github.com/vnphanquang/jsconfig/commit/ebd98caf7d31670ce32bd6a26efa3ee776d6b08f) Thanks [@vnphanquang](https://github.com/vnphanquang)! - attempt to lazy load eslint-plugin-svelte
+
 ## 4.0.1
 
 ### Patch Changes
