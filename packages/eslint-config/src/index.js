@@ -2,7 +2,6 @@ import { includeIgnoreFile } from '@eslint/compat';
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import importX from 'eslint-plugin-import-x';
-import svelte from 'eslint-plugin-svelte';
 import globals from 'globals';
 import ts from 'typescript-eslint';
 
@@ -19,22 +18,27 @@ import ts from 'typescript-eslint';
 
 /**
  * @param {Options} [options]
- * @returns {import('typescript-eslint').ConfigArray}
+ * @returns {Promise<import('typescript-eslint').ConfigArray>}
  */
-export function defineConfig(options = {}) {
+export async function defineConfig(options = {}) {
 	let { gitignorePath = [] } = options;
 	if (typeof gitignorePath === 'string') {
 		gitignorePath = [gitignorePath];
 	}
 
 	const useSvelte = options.svelte === true || typeof options.svelte === 'object';
+	/** @type {import('eslint-plugin-svelte').default | undefined} */
+	let svelte = undefined;
+	if (useSvelte) {
+		svelte = (await import('eslint-plugin-svelte')).default;
+	}
 
 	return ts.config(
 		js.configs.recommended,
 		...ts.configs.recommended,
-		...(useSvelte ? svelte.configs['flat/recommended'] : []),
+		...(useSvelte && svelte ? svelte.configs['flat/recommended'] : []),
 		prettier,
-		...(useSvelte ? svelte.configs['flat/prettier'] : []),
+		...(useSvelte && svelte ? svelte.configs['flat/prettier'] : []),
 		{
 			languageOptions: {
 				globals: {
