@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.0.3
+
+### Patch Changes
+
+- [`273c65d`](https://github.com/vnphanquang/jsconfig/commit/273c65dee9df5ed40ec4fe8051c6206aa9c112a3) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump plugin dependencies
+
 ## 4.0.2
 
 ### Patch Changes
