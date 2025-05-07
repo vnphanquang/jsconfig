@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.1.0
+
+### Minor Changes
+
+- [`ecec04d`](https://github.com/vnphanquang/jsconfig/commit/ecec04d40cdf8a1874892500f662bc5ffd8f45fd) Thanks [@vnphanquang](https://github.com/vnphanquang)! - bump eslint dependencies
+
 ## 4.0.4
 
 ### Patch Changes
