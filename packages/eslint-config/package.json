@@ -43,20 +43,20 @@
 		"eslint": ">=9.0.0"
 	},
 	"dependencies": {
-		"@eslint/compat": "^1.2.8",
-		"@eslint/js": "^9.25.1",
-		"@typescript-eslint/eslint-plugin": "^8.31.1",
-		"@typescript-eslint/parser": "^8.31.1",
+		"@eslint/compat": "^1.2.9",
+		"@eslint/js": "^9.26.0",
+		"@typescript-eslint/eslint-plugin": "^8.32.0",
+		"@typescript-eslint/parser": "^8.32.0",
 		"eslint-config-prettier": "^10.1.2",
 		"eslint-plugin-import-x": "^4.11.0",
 		"eslint-plugin-svelte": "^3.5.1",
 		"globals": "^16.0.0",
-		"typescript-eslint": "^8.31.1"
+		"typescript-eslint": "^8.32.0"
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "^2.20.8",
 		"@vnphanquang/prettierrc": "workspace:*",
-		"eslint": "^9.25.1",
+		"eslint": "^9.26.0",
 		"prettier": "^3.5.3",
 		"typescript": "^5.8.3"
 	}
