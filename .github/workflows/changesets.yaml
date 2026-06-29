@@ -21,20 +21,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-      - name: Setup node
-        uses: actions/setup-node@v4
+        uses: pnpm/action-setup@v6
         with:
-          node-version: 20
+          cache: true
+      - name: Setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --ignore-scripts --no-frozen-lockfile
       - name: Create release PR or Publish to npm
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
           version: pnpm ci:version
           publish: pnpm ci:publish
@@ -43,5 +45,3 @@ jobs:
           createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
