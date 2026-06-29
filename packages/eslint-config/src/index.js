@@ -1,9 +1,31 @@
-import { includeIgnoreFile } from '@eslint/compat';
 import js from '@eslint/js';
+import { defineConfig as defineEslintConfig, includeIgnoreFile } from 'eslint/config';
 import prettier from 'eslint-config-prettier';
-import importX from 'eslint-plugin-import-x';
+import { importX } from 'eslint-plugin-import-x';
 import globals from 'globals';
 import ts from 'typescript-eslint';
+
+export const IMPORT_ORDER_DEFAULTS = {
+	groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'unknown'],
+	pathGroups: [
+		{
+			pattern: '$*/**',
+			group: 'internal',
+		},
+		{
+			pattern: '$*',
+			group: 'internal',
+		},
+	],
+	'newlines-between': 'always',
+	pathGroupsExcludedImportTypes: [],
+	named: true,
+	alphabetize: {
+		order: 'asc',
+		caseInsensitive: false,
+	},
+	warnOnUnassignedImports: true,
+};
 
 /**
  * @typedef SvelteOptions
@@ -12,8 +34,8 @@ import ts from 'typescript-eslint';
 
 /**
  * @typedef Options
- * @property {string | string[]} [gitignorePath]
  * @property {SvelteOptions | boolean} [svelte]
+ * @property {string[]} [additionalIgnoreFiles]
  */
 
 /**
@@ -21,91 +43,81 @@ import ts from 'typescript-eslint';
  * @returns {Promise<import('typescript-eslint').ConfigArray>}
  */
 export async function defineConfig(options = {}) {
-	let { gitignorePath = [] } = options;
-	if (typeof gitignorePath === 'string') {
-		gitignorePath = [gitignorePath];
-	}
+	const { additionalIgnoreFiles = [] } = options;
 
-	const useSvelte = options.svelte === true || typeof options.svelte === 'object';
-	/** @type {import('eslint-plugin-svelte').default | undefined} */
-	let svelte = undefined;
-	if (useSvelte) {
-		svelte = (await import('eslint-plugin-svelte')).default;
-	}
+	const svelte =
+		options.svelte === true || typeof options.svelte === 'object'
+			? {
+					plugin: (await import('eslint-plugin-svelte')).default,
+					config:
+						typeof options.svelte === 'object' && options.svelte.config
+							? options.svelte.config
+							: undefined,
+				}
+			: null;
 
-	return ts.config(
+	return defineEslintConfig([
+		// ================
+		// Ignore Patterns
+		// ================
+		...additionalIgnoreFiles.map((path) => includeIgnoreFile(path)),
+
+		// =============
+		// Base Extends
+		// =============
 		js.configs.recommended,
+		// eslint-disable-next-line import-x/no-named-as-default-member
 		...ts.configs.recommended,
-		...(useSvelte && svelte ? svelte.configs['flat/recommended'] : []),
+		...(svelte ? [svelte.plugin.configs.recommended] : []),
 		prettier,
-		...(useSvelte && svelte ? svelte.configs['flat/prettier'] : []),
+		...(svelte ? [svelte.plugin.configs.prettier] : []),
 		{
 			languageOptions: {
 				globals: {
 					...globals.browser,
 					...globals.node,
-					...(useSvelte && {
-						App: 'readonly',
-					}),
 				},
 			},
 		},
-		...(useSvelte
+
+		// =================
+		// Svelte Specifics
+		// =================
+		...(svelte
 			? [
 					{
 						files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],
-
 						languageOptions: {
 							parserOptions: {
 								projectService: true,
 								extraFileExtensions: ['.svelte'],
+								// eslint-disable-next-line import-x/no-named-as-default-member
 								parser: ts.parser,
-								...(typeof options.svelte === 'object' &&
-									options.svelte.config && { svelteConfig: options.svelte.config }),
+								svelteConfig: svelte.config,
 							},
 						},
 					},
 				]
 			: []),
+
+		// ========
+		// Imports
+		// ========
+		importX.flatConfigs.recommended,
+		importX.flatConfigs.typescript,
 		{
-			plugins: {
-				'import-x': importX,
-			},
-			rules: {
-				'import-x/order': [
-					'error',
-					{
-						groups: [
-							'builtin',
-							'external',
-							'internal',
-							'parent',
-							'sibling',
-							'index',
-							'object',
-							'unknown',
-						],
-						pathGroups: [
-							{
-								pattern: '$*/**',
-								group: 'internal',
-							},
-							{
-								pattern: '$*',
-								group: 'internal',
-							},
-						],
-						'newlines-between': 'always',
-						pathGroupsExcludedImportTypes: [],
-						alphabetize: {
-							order: 'asc',
-							caseInsensitive: false,
-						},
-						warnOnUnassignedImports: true,
-					},
-				],
+			files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+			languageOptions: {
+				// eslint-disable-next-line import-x/no-named-as-default-member
+				parser: ts.parser,
+				ecmaVersion: 'latest',
+				sourceType: 'module',
 			},
 		},
-		...gitignorePath.map((path) => includeIgnoreFile(path)),
-	);
+		{
+			rules: {
+				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
+			},
+		},
+	]);
 }
