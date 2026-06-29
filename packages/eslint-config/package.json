@@ -22,7 +22,8 @@
 	},
 	"files": [
 		"src",
-		"types"
+		"types",
+    "README.md"
 	],
 	"bugs": {
 		"url": "https://github.com/vnphanquang/jsconfig/issues"
