@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.2.0
+
+### Minor Changes
+
+- [`e15340b`](https://github.com/vnphanquang/jsconfig/commit/e15340b5ef3a7da9cbc8bf8046a5251094c6ee08) Thanks [@vnphanquang](https://github.com/vnphanquang)! - sync upstream dependencies & setup, export "IMPORT_ORDER_DEFAULTS"
+
 ## 4.1.0
 
 ### Minor Changes
