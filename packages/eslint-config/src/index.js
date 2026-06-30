@@ -40,9 +40,10 @@ export const IMPORT_ORDER_DEFAULTS = {
 
 /**
  * @param {Options} [options]
+ * @param {(import('typescript-eslint').ConfigWithExtends)[]} additionals
  * @returns {Promise<import('typescript-eslint').ConfigArray>}
  */
-export async function defineConfig(options = {}) {
+export async function defineConfig(options = {}, ...additionals) {
 	const { additionalIgnoreFiles = [] } = options;
 
 	const svelte =
@@ -119,5 +120,6 @@ export async function defineConfig(options = {}) {
 				'import-x/order': ['error', IMPORT_ORDER_DEFAULTS],
 			},
 		},
+		...(additionals || []),
 	]);
 }
