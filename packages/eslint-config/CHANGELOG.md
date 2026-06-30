@@ -1,5 +1,11 @@
 # @vnphanquang/eslint-config
 
+## 4.2.1
+
+### Patch Changes
+
+- [`539ae86`](https://github.com/vnphanquang/jsconfig/commit/539ae86b79f3ea356793b0aa9251db683e19556b) Thanks [@vnphanquang](https://github.com/vnphanquang)! - allow passing additional configs to `eslint.defineConfig`
+
 ## 4.2.0
 
 ### Minor Changes
